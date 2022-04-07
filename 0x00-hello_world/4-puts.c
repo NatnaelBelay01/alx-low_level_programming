@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- * main - this is a  description of main
- * Return: It returns zero
+ * main-this is the main function
+ * RETURN: it returs zero
  */
-int main(void)
-{ 
-puts("\"Programming is like building a multilingual puzzle");
-return (0);
+main(void)
+{
+puts("\"programming is like building a multilingual puzzel");
+return(0);
 }
