@@ -33,5 +33,6 @@ int main(void)
 		num2 = 48;
 		num1++;
 	}
+	putchar('\n');
 	return (0);
 }
