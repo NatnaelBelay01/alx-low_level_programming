@@ -5,13 +5,18 @@
  */
 int main(void)
 {
-	int num;
+	int num, num1;
 
+	num1 = 0;
 	for (num = 48; num <= 57; num++)
 	{
 		putchar(num);
-		putchar(',');
-		putchar(' ');
+		num1++;
+		if (num1 < 10)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
 	return (0);
 }
