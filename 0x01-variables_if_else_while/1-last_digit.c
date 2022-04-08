@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*
+/**
  * main -this is the description for the main function
  * Return: retunrs 0(success)
  */
