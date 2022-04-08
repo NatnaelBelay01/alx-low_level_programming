@@ -13,7 +13,7 @@ int main(void)
 		{
 			while (num3 <= 57)
 			{
-				if (num2 < num3)
+				if ((num2 < num3) && (num1 < num2))
 				{
 					putchar(num1);
 					putchar(num2);
