@@ -13,5 +13,5 @@ int main(void)
 		_putchar(kar[num]);
 	}
 	_putchar('\n');
-	retunr (0);
+	return (0);
 }
