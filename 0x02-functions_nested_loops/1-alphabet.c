@@ -3,7 +3,7 @@
  * print_alphabet - is a function that prints the alphabets
  */
 
-void print_alphabet(void);
+void print_alphabet(void)
 {
 	char n = 'a';
 
