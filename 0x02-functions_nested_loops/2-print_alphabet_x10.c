@@ -1,24 +1,19 @@
+#include "main.h"
 /**
- * main - the main function
- * Return: returns 0
+ * print_alphabet_x10 - Prints the alphabet 10 times
  */
 void print_alphabet_x10(void);
-int main(void)
 {
-	return (0);
-}
-void print_alphabet_x10(void);
-{
-	int m = 0;
-	char n = 'a';
+	int m;
+	char n;
 
-	for (m; m < 10; m++)
+	for (m = 0; m < 10; m++)
 	{
-		for (n; n <= 'z'; n++)
+		for (n = 'a'; n <= 'z'; n++)
 		{
-			putchar(n);
+			_putchar(n);
 		}
 		n = 'a';
-		putchar('\n');
+		_putchar('\n');
 	}
 }
