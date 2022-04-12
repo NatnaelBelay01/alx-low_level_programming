@@ -6,9 +6,9 @@
 int main(void)
 {
 	char kar[] = "_putchar";
-	int num = 0;
+	int num;
 
-	for (num; num < 8; num++)
+	for (num = 0; num < 8; num++)
 	{
 		_putchar(kar[num]);
 	}
