@@ -6,6 +6,8 @@
  */
 int print_last_digit(int n)
 {
+	int kar;
+
 	kar = n % 10;
 	if (kar < 0)
 		kar = kar * -1;
