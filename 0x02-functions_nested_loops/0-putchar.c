@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	char kar[9] = "_putchar";
+	char kar[] = "_putchar";
 	int num = 0;
 
 	for (num; num < 8; num++)
