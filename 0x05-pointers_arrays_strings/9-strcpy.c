@@ -17,7 +17,7 @@ char *_strcpy(char *dest, char *src)
 	dest[n + 1] = '\0';
 	return (dest);
 }
-#include "main.h"
+
 /**
  * _strlen - a function taht returns the length of a string
  * @s: the string to be measured
