@@ -27,3 +27,18 @@ void puts_half(char *str);
 	}
 	_putchar('\n');
 }
+/**
+ * _strlen - prints string lenth
+ * @s: the string
+ * Return: the length
+ */
+int _strlen(char *s)
+{
+	int i = 0;
+
+        while (s[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
+}
