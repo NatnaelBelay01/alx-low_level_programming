@@ -4,7 +4,7 @@
  * @a: the array
  * @n: the number of elements
  */
-void revrse_array(int *a, int n)
+void reverse_array(int *a, int n)
 {
 	int temp, i, j;
 
