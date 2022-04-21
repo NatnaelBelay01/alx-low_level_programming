@@ -7,47 +7,28 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int i = sizeof(s1) / sizeof(char), j = sizeof(s2) / sizeof(char), dif = 0, total = 0;
-	if (i == j)
+	int i, j = 0, k = 0;
+	for (i = 0; s1[i] != '\0' && s[i] != '\0'; i++)
 	{
-		i = 0;
-		while (s1[i] != 0)
-		{
-			dif = s1[i] - s2[i];
-			total = total + dif;
-			if (dif != 0)
-				break;
-			i++;
-		}
+		j = s1[i] - s2[i];
+		k = k + j;
+		if (j != 0)
+			return(j);
 	}
-	else
+	while (s1[j] != '\0')
 	{
-		if (i < j)
-		{
-			j = 0;
-			while (s1[j] != '\0')
-			{
-				dif = s1[j] - s2[j];
-				total = total + dif;
-				if (dif != 0)
-					return (total);
-				j++;
-			}
+		j++;
+	}
+	while (s2[k] != '\0')
+	{
+		k++;
+	}
+	if (j != k)
+	{
+		if (j > k)
 			return (2);
-		}
 		else
-		{
-			i = 0
-				while (s1[i] != '\0')
-				{
-					dif = s1[i] - s2[i];
-					total = total + dif;
-					if (dif != 0)
-						return (total);
-					i++;
-				}
 			return (-2);
-		}
 	}
-	return (dif);
+	return (0);
 }
