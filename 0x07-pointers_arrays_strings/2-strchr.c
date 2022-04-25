@@ -7,19 +7,15 @@
  */
 char *_strchr(char *s, char c)
 {
-	char *res;
-	int i, j;
+
+	int i;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] == c)
 		{
-			for (j = 0; s[j] != '\0'; j++)
-			{
-				res[j] = s[i];
-				i++;
-			}
-			return (res);
+
+			return (s + i);
 		}
 	}
 	return (NULL);
