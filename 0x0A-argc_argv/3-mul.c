@@ -19,7 +19,11 @@ int main(int argc, char *argv[])
 		printf("%d", prod);
 	}
 	else
+	{
 		printf("Error");
+		putchar('\n');
+		return (1);
+	}
 	putchar('\n');
 	return (0);
 }
