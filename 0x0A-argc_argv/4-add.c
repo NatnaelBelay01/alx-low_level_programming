@@ -20,9 +20,12 @@ int main(int argc, char *argv[])
 		}
 		i++;
 	}
-	for (i = 2; i < argc; i++)
+	if (argc > 1)
 	{
-		sum = sum + atoi(argv[i]);
+		for (i = 1; i < argc; i++)
+		{
+			sum = sum + atoi(argv[i]);
+		}
 	}
 	printf("%d", sum);
 	putchar('\n');
