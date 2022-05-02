@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include "main.h"
+#define maxx 16711568
 /**
  * create_array - a fucntion that creates an array
  * @size: the size of the array
@@ -11,7 +12,7 @@ char *create_array(unsigned int size, char c)
 	char *s;
 	unsigned int i;
 
-	if (size && malloc(size))
+	if (size && size < maxx)
 	{
 		s = malloc(sizeof(*s) * size);
 		for (i = 0; i < size; i++)
