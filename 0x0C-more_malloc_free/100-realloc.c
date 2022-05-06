@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <stdlib.h>
 /**
  * cpy - a function that copies the contents of a string to another string
  * @src: the source
