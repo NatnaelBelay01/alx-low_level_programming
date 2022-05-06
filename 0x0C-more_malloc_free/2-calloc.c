@@ -22,7 +22,7 @@ char *_memset(char *s, char b, unsigned int n)
  * _calloc - a function that creates an array
  * @nmemb: the number of members
  * @size: the size of each memeber
- * Return - a void pointer to the array created
+ * Return: a void pointer to the array created
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
