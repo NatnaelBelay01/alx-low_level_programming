@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "dog.h"
 /**
  * print_dog - prints a structure
@@ -11,7 +12,7 @@ if (d == NULL)
 (*d).name != NULL ? printf("Name: %s\n", (*d).name) : printf("Name: (nill)\n");
 printf("Age: %f\n", (*d).age);
 if ((*d).owner != NULL)
-	printf("Owner: %s\n");
+	printf("Owner: %s\n", (*d).owner);
 else
 	printf("Owner: (nill)\n");
 }
