@@ -6,9 +6,12 @@
  */
 void print_dog(struct dog *d)
 {
-	if (d == NULL)
-		return;
-	(*d).name != NULL ? printf("Name: %s\n", (*d).name) : printf("Name: (nill)\n");
-	printf("Age: %f\n", (*d).age);
-	(*d).owner != NULL ? printf("Owner: %s\n", (*d).owner) : printf("Owner: (nill)\n");
+if (d == NULL)
+	return;
+(*d).name != NULL ? printf("Name: %s\n", (*d).name) : printf("Name: (nill)\n");
+printf("Age: %f\n", (*d).age);
+if ((*d).owner != NULL)
+	printf("Owner: %s\n");
+else
+	printf("Owner: (nill)\n");
 }
