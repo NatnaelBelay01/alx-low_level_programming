@@ -18,6 +18,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			printf("%s", separator);
 		printf("%d", va_arg(lst, int));
 	}
-	putchar('\n');
+	if (n != 0)
+		putchar('\n');
 	va_end(lst);
 }
