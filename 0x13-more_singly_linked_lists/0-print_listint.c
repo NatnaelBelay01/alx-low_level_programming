@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_listint - a function that prints the elements of a list
+ * Print_listint - a function that prints the elements of a list
  * @h: points to the head
  * Return: the number of nodes
  */
@@ -9,7 +9,6 @@
 size_t print_listint(const listint_t *h)
 {
 	size_t count = 0;
-
 	if (h != NULL)
 	{
 		while (h != NULL)
@@ -20,6 +19,6 @@ size_t print_listint(const listint_t *h)
 		}
 	}
 	else
-		printf("nil\n");
+		printf("(nil)\n");
 	return (count);
 }
