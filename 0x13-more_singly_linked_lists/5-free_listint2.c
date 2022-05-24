@@ -18,4 +18,6 @@ void free_listint2(listint_t **head)
 		temp = temp2;
 	}
 	free(temp2);
+	temp2 = NULL;
+	temp = NULL;
 }
