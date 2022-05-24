@@ -11,9 +11,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 	listint_t *nvgt = *head, *nvgt1;
 
-	if (head == NULL)
-		return (-1);
-	if (nvgt != NULL)
+	if (nvgt != NULL && head != NULL)
 	{
 		nvgt1 = (*head)->next;
 		if (index == 0)
@@ -36,6 +34,5 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		nvgt1 = NULL;
 		return (1);
 	}
-	*head = NULL;
-	return (1);
+	return (-1);
 }
