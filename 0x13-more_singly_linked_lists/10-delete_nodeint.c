@@ -23,7 +23,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		}
 		while (index > 1)
 		{
-			if (nvgt == NULL)
+			if (nvgt->next == NULL)
 				return (-1);
 			nvgt = nvgt->next;
 			nvgt1 = nvgt1->next;
