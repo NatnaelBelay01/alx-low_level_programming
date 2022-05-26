@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * set_bit - a function that sets a bit at a certian index
+ * clear_bit - a function that clears a bit at a certian index
  * @n: a pointer to the number
  * @index: the index
  * Return: 1 or -1
