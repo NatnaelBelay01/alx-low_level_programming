@@ -29,7 +29,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	buf[bits_red] = '\0';
 	close(fd);
-	bits_rot = write(1, buf, bits_red);
+	bits_rot = write(STDOUT_FILENO, buf, bits_red);
 	if (bits_rot < 0)
 	{
 		free(buf);
