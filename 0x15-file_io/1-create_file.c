@@ -21,7 +21,7 @@ int create_file(const char *filename, char *text_content)
 	if (text_content != NULL)
 	{
 		bits_rot = write(fd, text_content, i);
-		if (bits_rot < 0)
+		if (bits_rot < 0 || bits_rot != i)
 			return (-1);
 	}
 	close(fd);
