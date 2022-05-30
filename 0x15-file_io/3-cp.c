@@ -28,6 +28,7 @@ int main(int argc, char *argv[])
 	if (fdt < 0 || buf_rot < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+		close(fdf);
 		exit(99);
 	}
 	clsf = close(fdf);
