@@ -10,6 +10,7 @@ int main(int argc, char *argv[])
 {
 	int fdf, fdt, buf_red, buf_rot, clsf, clst;
 	char buf[BUFSIZ];
+
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
