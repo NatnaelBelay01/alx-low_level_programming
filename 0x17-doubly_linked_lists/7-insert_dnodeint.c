@@ -27,21 +27,18 @@ unsigned int len(dlistint_t *head)
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *temp = *h, *new;
+	unsigned int length = len(*h);
 
-	if (*h == NULL || len(*h) < idx)
+	if (*h == NULL || length < idx)
 		return (NULL);
 	new = malloc(sizeof(dlistint_t));
-	if (new == NULL)
+	if (new == NULL || !h)
 		return (NULL);
 	new->n = n;
 	if (idx == 0)
-	{
-		new->prev = NULL;
-		new->next = *h;
-		(*h)->prev = new;
-		*h = new;
-		return (new);
-	}
+		return (add_dnodeint(h, n));
+	if (idx == length)
+		return (add_dnodeint_end(h, n));
 	while (idx > 0)
 	{
 		temp = temp->next;
