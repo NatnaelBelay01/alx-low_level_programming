@@ -9,6 +9,7 @@ unsigned int len(dlistint_t *head)
 {
 	unsigned int count = 0;
 	dlistint_t *temp = head;
+
 	while (temp->next != NULL && temp != NULL)
 	{
 		temp = temp->next;
