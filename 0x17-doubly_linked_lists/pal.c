@@ -26,6 +26,6 @@ int main(void)
 				l = j * i;
 		}
 	}
-	printf("%d\n", l);
+	printf("%d", l);
 	return (0);
 }
