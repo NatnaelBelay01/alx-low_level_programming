@@ -9,9 +9,9 @@
  */
 hash_node_t *ad_nod(hash_node_t **head, const char *key, const char *value)
 {
-	hash_node_t *temp = *head, *new;
+	hash_node_t *temp = *head;
 
-	while (temp != NULL && temp->next != NULL)
+	while (temp != NULL)
 	{
 		if (strcmp(temp->key, key) == 0)
 		{
@@ -21,23 +21,19 @@ hash_node_t *ad_nod(hash_node_t **head, const char *key, const char *value)
 		}
 		temp = temp->next;
 	}
-	new = malloc(sizeof(hash_node_t));
-	if (new == NULL)
+	temp = malloc(sizeof(hash_node_t));
+	if (temp == NULL)
 		return (NULL);
-	new->key = strdup(key);
-	new->value = strdup(value);
-	new->next = NULL;
-	if (new->key == NULL || new->value == NULL)
+	temp->key = strdup(key);
+	temp->value = strdup(value);
+	temp->next = NULL;
+	if (temp->key == NULL || temp->value == NULL)
 	{
-		free(new);
+		free(temp);
 		return (NULL);
 	}
-	if (*head == NULL)
-	{
-		*head = new;
-		return (*head);
-	}
-	temp->next = new;
+	temp->next = *head;
+	*head = temp;
 	return (*head);
 }
 
