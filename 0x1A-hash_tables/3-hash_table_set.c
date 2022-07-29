@@ -26,6 +26,7 @@ hash_node_t *ad_nod(hash_node_t **head, const char *key, const char *value)
 		return (NULL);
 	new->key = strdup(key);
 	new->value = strdup(value);
+	new->next = NULL;
 	if (new->key == NULL || new->value == NULL)
 	{
 		free(new);
